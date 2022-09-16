@@ -8,6 +8,7 @@ authors = ["Dawid Kraczkowski <dawid.kraczkowski@kaizenreporting.com>"]
 python = "^3.10"
 
 [tool.poetry.dev-dependencies]
+boto3 = "^1.24.74"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -165,4 +165,4 @@ components:
         user_name:
           type: string
           example: Bob Builder
-          
+
