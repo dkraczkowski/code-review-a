@@ -1,0 +1,168 @@
+openapi: 3.0.3
+info:
+  title: Technical blog
+  version: 1.0.11
+
+paths:
+  /updates:
+    put:
+      summary: Add a basic update
+      requestBody:
+        description: Create new update
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserUpdate'
+      responses:
+        '201':
+          description: Successful operation
+    get:
+      summary: View updates
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserUpdateResponse'
+
+  /updates/acomment:
+    put:
+      summary: Add comment
+      requestBody:
+        description: Create new comment
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserUpdateComment'
+      responses:
+        '201':
+          description: Successful operation
+    get:
+      summary: View comments
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserUpdateCommentResponse'
+  /updates/comment/{comment_id}:
+    delete:
+      summary: Delete comment
+      parameters:
+        - in: path
+          name: comment_id
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+
+components:
+  schemas:
+    UserUpdateComment:
+      type: object
+      properties:
+        comment:
+          type: string
+          description: String comment of the update content
+        update_id:
+          type: string
+          description: String id of the update this comment relates to
+        user_name:
+          type: string
+          description: String username
+
+    UserUpdateCommentResponse:
+      type: object
+      properties:
+        Items:
+          type: array
+          items:
+            $ref: '#/components/schemas/UserUpdateCommentItemResponse'
+        Count:
+          type: integer
+        ScannedCount:
+          type: integer
+      example: |
+        {
+          "Items": [
+            {
+              "comment_id": "b35b090f-87a1-42fe-b47c-0c5cc0eee930",
+              "comment": "Hello World Comment!",
+              "user_name": "Bob Builder"
+            }
+          ],
+          "Count": 1,
+          "ScannedCount": 1
+        }
+
+    UserUpdateCommentItemResponse:
+      type: object
+      properties:
+        comment_id:
+          type: string
+          description: comment id
+        comment:
+          type: string
+          description: String comment of the update content
+        user_name:
+          type: string
+          description: String username
+
+
+    UserUpdate:
+      type: object
+      properties:
+        update:
+          type: string
+          description: String message of the update content
+        user_name:
+          type: string
+          description: String username
+
+    UserUpdateResponse:
+      type: object
+      properties:
+        Items:
+          type: array
+          items:
+            $ref: '#/components/schemas/UpdateItemResponse'
+        Count:
+          type: integer
+        ScannedCount:
+          type: integer
+      example: |
+        {
+          "Items": [
+            {
+              "update_id": "42978990-a6e5-414b-a35d-53816d3fc749",
+              "update": "Hello, World!",
+              "user_name": "Bob Builder"
+            },
+            {
+              "update_id": "9b8f7fe3-2856-47d5-9edc-670b3f292313",
+              "update": "Hello, World!",
+              "user_name": "John Doe"
+            }
+          ],
+          "Count": 2,
+          "ScannedCount": 2
+        }
+      
+
+    UpdateItemResponse:
+      type: object
+      properties:
+        update_id:
+          type: string
+          example: 42978990-a6e5-414b-a35d-53816d3fc749
+        update:
+          type: string
+          example: Hello, world!
+        user_name:
+          type: string
+          example: Bob Builder
+          
