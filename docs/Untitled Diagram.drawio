@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-10T11:42:26.645Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6.1 Safari/605.1.15" etag="2NaDzVcIq2f0kscwwOPo" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-10T11:45:01.245Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6.1 Safari/605.1.15" etag="TeJ0y1OyE4CXH-UYalol" version="20.5.3" type="github">
   <diagram id="m_pdPa6cLZ9sQrC1DyXI" name="Page-1">
     <mxGraphModel dx="1013" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -24,16 +24,25 @@
           <mxGeometry x="210" y="120" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="QINf7qv544Nl_s9j7ZfR-2" value="Project" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="420" y="120" width="80" height="80" as="geometry" />
+          <mxGeometry x="520" y="120" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="QINf7qv544Nl_s9j7ZfR-4" value="Member" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="210" y="300" width="80" height="80" as="geometry" />
+          <mxGeometry x="210" y="330" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="QINf7qv544Nl_s9j7ZfR-9" value="Team should be able to create a project" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="320" y="240" width="230" height="30" as="geometry" />
+        <mxCell id="QINf7qv544Nl_s9j7ZfR-9" value="As a team I want to be able to create a project" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="220" width="270" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QINf7qv544Nl_s9j7ZfR-10" value="Member should be able to join multiple teams" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="320" y="280" width="260" height="30" as="geometry" />
+        <mxCell id="QINf7qv544Nl_s9j7ZfR-10" value="As a team I want to be able to migrate a project to other team" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="280" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QINf7qv544Nl_s9j7ZfR-12" value="As a team I want to be able to archive a project" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="250" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QINf7qv544Nl_s9j7ZfR-13" value="As a memeber I want to be able to request to join a team" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QINf7qv544Nl_s9j7ZfR-15" value="As a team I want to be able to accept a join request" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="350" width="300" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
